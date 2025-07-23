@@ -9,7 +9,7 @@ const transactionSchema = new mongoose.Schema({
     type: Number,
     required: true
   },
-  createdAt: {
+  createdAt: {   
     type: Date,
     default: Date.now
   }
