@@ -36,22 +36,6 @@ An elegant, full-stack **Expense Tracker** web application built with **React**,
 
 ## 🖼️ Screenshots
 
-![Expense Tracker UI](https://user-images.githubusercontent.com/your_screenshot_link_here.png)
+<img width="1918" height="980" alt="image" src="https://github.com/user-attachments/assets/f5325ba8-d979-4687-ba8d-f39b2b9658c5" />
 
----
 
-## 📂 Project Structure
-
-expense-tracker/
-│
-├── client/ # React frontend
-│ ├── components/ # Reusable components
-│ ├── services/ # Axios API services
-│ ├── App.js
-│ └── ...
-│
-├── server/ # Express backend
-│ ├── models/ # Mongoose models
-│ ├── routes/ # API routes
-│ ├── controllers/ # Business logic
-│ └── server.js # Entry point
