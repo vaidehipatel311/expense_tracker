@@ -15,8 +15,8 @@ router.get('/', async (req, res) => {
 // Create a new transaction
 router.post('/', async (req, res) => {
   try {
-    const { text, amount } = req.body;
-    const newTransaction = new Transaction({ text, amount });
+    const { text, amount, category, date } = req.body;
+    const newTransaction = new Transaction({ text, amount, category, date });
     await newTransaction.save();
     res.status(201).json(newTransaction);
   } catch (err) {

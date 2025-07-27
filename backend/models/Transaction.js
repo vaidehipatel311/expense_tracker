@@ -9,7 +9,12 @@ const transactionSchema = new mongoose.Schema({
     type: Number,
     required: true
   },
-  createdAt: {   
+  category: {
+    type: String,
+    required: true,
+    enum: ['Food', 'Transport', 'Entertainment', 'Other']
+  },
+  date: {
     type: Date,
     default: Date.now
   }

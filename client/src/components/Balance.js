@@ -6,8 +6,11 @@ const Balance = ({ transactions }) => {
 
   return (
     <div>
-      <h4>Your Balance</h4>
-      <h1>${total}</h1>
+      <div class="balance-section">
+        <h4>Your Balance</h4>
+        <h2>${total}</h2>
+      </div>
+
     </div>
   );
 };

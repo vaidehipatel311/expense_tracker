@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -58,5 +58,154 @@ button {
 
 button:hover {
   background-color: #555;
+} */
+
+body {
+font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #e3f2fd, #fce4ec);
+  margin: 0;
+  padding: 0;
+  color: #333;
 }
 
+.container {
+    max-width: 800px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+h1, h2, h3 {
+  text-align: center;
+  color: #3949ab;
+  margin-bottom: 20px;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+form input, form select, form button{
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+form button {
+  grid-column: span 2;
+  background-color: #3949ab;
+  color: white;
+  border: none;
+  transition: 0.3s ease;
+}
+
+form button:hover {
+    background-color: #303f9f;
+}
+
+.expense-table {
+  overflow-x: auto;
+}
+
+.expense-table table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fafafa;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.expense-table th {
+background-color: #e8eaf6;
+  color: #1a237e;
+  padding: 12px;
+  text-align: left;
+}
+
+.expense-table td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+.expense-table th {
+  background-color: #e8eaf6;
+  color: #1a237e;
+  padding: 12px;
+  text-align: left;
+}
+
+.expense-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.total-amount {
+    text-align: right;
+    font-size: 18px;
+}
+
+.filter {
+    margin-bottom: 20px;
+    text-align: right;
+}
+
+.filter label {
+    margin-right: 10px;
+}
+
+.filter select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.btn {
+  padding: 8px 16px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #d32f2f;
+}
+
+/* Balance Section */
+.balance-section {
+  text-align: center;
+  font-size: 24px;
+  margin: 20px 0;
+  color: #2e7d32;
+}
+
+/* Chart */
+.chart-container {
+  background-color: #fff7e6;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  margin: 20px 0;
+  width: 100%;
+  overflow: hidden; /* no scrollbars */
+  height: auto; /* allow content to size naturally */
+  max-height: 350px; /* optional: limit height */
+  box-sizing: border-box;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  form {
+    grid-template-columns: 1fr;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}
