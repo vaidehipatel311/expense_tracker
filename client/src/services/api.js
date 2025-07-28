@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_BASE_URL = 'http://localhost:5000/api/transactions'; // Update when deploying
+const API_BASE_URL = 'https://expense-tracker-backend-l69j.onrender.com'; // Update when deploying
 
 export const getTransactions = () => axios.get(API_BASE_URL);
 

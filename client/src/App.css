@@ -190,12 +190,12 @@ background-color: #e8eaf6;
   background-color: #fff7e6;
   border-radius: 16px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-  padding: 16px;
+  padding: 24px;
   margin: 20px 0;
   width: 100%;
-  overflow: hidden; /* no scrollbars */
-  height: auto; /* allow content to size naturally */
-  max-height: 350px; /* optional: limit height */
+  overflow: hidden;
+  height: auto; 
+  max-height: 350px;
   box-sizing: border-box;
 }
 

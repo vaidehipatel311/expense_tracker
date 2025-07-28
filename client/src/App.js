@@ -21,15 +21,6 @@ function App() {
     setTransactions(res.data);
   };
 
-  // const handleAdd = async (e) => {
-  //   e.preventDefault();
-  //   if (!text || !amount) return;
-  //   await addTransaction({ text, amount: +amount });
-  //   setText('');
-  //   setAmount('');
-  //   fetchTransactions();
-  // };
-
   const handleAdd = async (text, amount, category, date) => {
     await addTransaction({ text, amount: +amount, category, date });
     fetchTransactions();
